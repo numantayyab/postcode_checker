@@ -1,0 +1,11 @@
+<% if @result %>
+	<p>We serve in your area</p>
+<% elsif flash[:error].present? %>
+<p style="color: red;"><%= flash[:error]%></p>
+
+<% else %>
+	<p style="color: red;">We dont serve in your area</p>
+<% end %>
+<div style="align: center;">
+	<%= link_to :back, root_path %>
+</span>

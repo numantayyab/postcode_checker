@@ -1,0 +1,4 @@
+lsoa_allowed:
+  ["lambeth", "southwark"]
+post_codes_allowed:
+  ["SH241AA", "SH241AB"]
