@@ -24,7 +24,7 @@ class HomeController < ApplicationController
 	private
 
 	def search_params
-		params.permit(:post_code)
+		params.require(:search).permit(:post_code)
 	end
 
 	def check_post_code

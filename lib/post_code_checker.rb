@@ -19,7 +19,7 @@ class PostCodeChecker
 
 	def search_code
 
-		response = self.class.get ENDPOINT_URI + URI.encode(self.code)
+		response = self.class.get ENDPOINT_URI + URI.encode_www_form_component(self.code)
 
 		if response.code.eql? 200 ## postcode found, see if we allow it
 			result = check_allowed_areas(response.parsed_response["result"]["lsoa"])

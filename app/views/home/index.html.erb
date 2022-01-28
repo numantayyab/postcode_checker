@@ -1,6 +1,6 @@
 
 <%= form_tag("/home/search", :method => "get") do %>
    <%= label_tag(:post_code, "Please Enter Your Post:") %>
-   <%= text_field_tag(:post_code, "WR4 0SY") %>
+   <%= text_field_tag("search[post_code]", "") %>
    <%= submit_tag("Search") %>
 <% end %>
